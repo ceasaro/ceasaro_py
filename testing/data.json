@@ -1,0 +1,44 @@
+[
+    {
+        "timestamp": 1409153771168,
+        "time_connect": 0.104,
+        "time_total": 0.564,
+        "time_start_transfer": 0.38
+    },
+    {
+        "timestamp": 1409153772665,
+        "time_connect": 0.098,
+        "time_total": 0.481,
+        "time_start_transfer": 0.383
+    },
+    {
+        "timestamp": 1409153774376,
+        "time_connect": 0.1,
+        "time_total": 0.695,
+        "time_start_transfer": 0.503
+    },
+    {
+        "timestamp": 1409153775893,
+        "time_connect": 0.095,
+        "time_total": 0.501,
+        "time_start_transfer": 0.406
+    },
+    {
+        "timestamp": 1409153777459,
+        "time_connect": 0.095,
+        "time_total": 0.551,
+        "time_start_transfer": 0.365
+    },
+    {
+        "timestamp": 1409153779006,
+        "time_connect": 0.093,
+        "time_total": 0.532,
+        "time_start_transfer": 0.353
+    },
+    {
+        "timestamp": 1409153780586,
+        "time_connect": 0.098,
+        "time_total": 0.564,
+        "time_start_transfer": 0.445
+    }
+]
