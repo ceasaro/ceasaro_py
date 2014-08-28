@@ -29,6 +29,9 @@ def get_arg_parser():
     parser.add_argument('url', help="The url to measure.")
     parser.add_argument('-i', '--interval', help="Time interval between polling e.g. 5s, 1m, 1h10m30s", default='10s')
     parser.add_argument('-t', '--time', help="The time to run this script e.g. 1h10m30s, 2m, 5s")
+    parser.add_argument('-g', '--graph', help="Create a html file with a google graph of the recorded data")
+    parser.add_argument('--graph-file', help="name of the google graph html file ",
+                        default='google-line-chart.html')
     # parser.add_argument('-t', '--test', nargs='?',
     #                     help="run the units tests, a python test path can be added as value. "
     #                          "e.g. -t TestDebianSysInfo.test_get_disk_info")
@@ -80,15 +83,13 @@ def main(prog_args):
                 all_data.append(time_stats)
                 sleep_time = iteration_time_left if iteration_time_left.seconds > 0 else 0
                 sleep(sleep_time.seconds)
-            create_line_chart(all_data)
-            console.log("alle data is:")
-            console.log(all_data)
+
+            if args.graph:
+                create_line_chart(all_data, html_output_file=args.graph_file)
 
         else:
-            d = [{'timestamp': 1409153771168, 'time_connect': 0.104, 'time_total': 0.564, 'time_start_transfer': 0.38}, {'timestamp': 1409153772665, 'time_connect': 0.098, 'time_total': 0.481, 'time_start_transfer': 0.383}, {'timestamp': 1409153774376, 'time_connect': 0.1, 'time_total': 0.695, 'time_start_transfer': 0.503}, {'timestamp': 1409153775893, 'time_connect': 0.095, 'time_total': 0.501, 'time_start_transfer': 0.406}, {'timestamp': 1409153777459, 'time_connect': 0.095, 'time_total': 0.551, 'time_start_transfer': 0.365}, {'timestamp': 1409153779006, 'time_connect': 0.093, 'time_total': 0.532, 'time_start_transfer': 0.353}, {'timestamp': 1409153780586, 'time_connect': 0.098, 'time_total': 0.564, 'time_start_transfer': 0.445}]
-            create_line_chart(d)
-            # time_stats = stats.load_time(args.url)
-            # console.log(time_stats)
+            time_stats = stats.load_time(args.url)
+            console.log(time_stats)
 
     except ScriptAlreadyRunningException, e:
         console.error(e)
