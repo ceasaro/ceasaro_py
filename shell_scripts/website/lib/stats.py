@@ -8,6 +8,7 @@ from lib.utils import convert_string
 TIME_CONNECT_KEY = 'time_connect'
 TIME_START_TRANSFER_KEY = 'time_start_transfer'
 TIME_TOTAL_KEY = 'time_total'
+TIMESTAMP_MILLIS_KEY = 'timestamp'
 
 
 def load_time(url, raw=False):
@@ -35,7 +36,7 @@ def load_time(url, raw=False):
         time_data[TIME_CONNECT_KEY] = convert_string(time_data[TIME_CONNECT_KEY].replace(',', '.'))
         time_data[TIME_START_TRANSFER_KEY] = convert_string(time_data[TIME_START_TRANSFER_KEY].replace(',', '.'))
         time_data[TIME_TOTAL_KEY] = convert_string(time_data[TIME_TOTAL_KEY].replace(',', '.'))
-        time_data['timestamp'] = int(time.time() * 1000)
+        time_data[TIMESTAMP_MILLIS_KEY] = int(time.time() * 1000)
         return time_data
 
     # lines = curl_output.splitlines()

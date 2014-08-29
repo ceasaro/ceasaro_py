@@ -27,11 +27,15 @@ PID_FILE = os.path.expanduser('/run/{0}.pid'.format(SCRIPT_NAME)) \
 def get_arg_parser():
     parser = argparse.ArgumentParser()
     parser.add_argument('url', help="The url to measure.")
-    parser.add_argument('-i', '--interval', help="Time interval between polling e.g. 5s, 1m, 1h10m30s", default='10s')
-    parser.add_argument('-t', '--time', help="The time to run this script e.g. 1h10m30s, 2m, 5s")
-    parser.add_argument('-g', '--graph', help="Create a html file with a google graph of the recorded data")
-    parser.add_argument('--graph-file', help="name of the google graph html file ",
-                        default='google-line-chart.html')
+    parser.add_argument('-i', '--interval', default='10s',
+                        help="Time interval between polling e.g. 5s, 1m, 1h10m30s")
+    parser.add_argument('-t', '--time',
+                        help="The time to run this script e.g. 1h10m30s, 2m, 5s")
+    parser.add_argument('-g', '--graph', action='store_true',
+                        help="Create a html file with a google graph of the recorded data")
+    parser.add_argument('--graph-file', default='google-line-chart.html',
+                        help="name of the google graph html file "
+                        )
     # parser.add_argument('-t', '--test', nargs='?',
     #                     help="run the units tests, a python test path can be added as value. "
     #                          "e.g. -t TestDebianSysInfo.test_get_disk_info")
@@ -86,6 +90,9 @@ def main(prog_args):
 
             if args.graph:
                 create_line_chart(all_data, html_output_file=args.graph_file)
+                console.log(all_data)
+            else:
+                console.log(all_data)
 
         else:
             time_stats = stats.load_time(args.url)
