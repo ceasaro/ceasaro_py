@@ -28,7 +28,7 @@ def get_arg_parser():
     parser = argparse.ArgumentParser()
     parser.add_argument('url', help="The url to measure.")
     parser.add_argument('-i', '--interval', default='10s',
-                        help="Time interval between polling e.g. 5s, 1m, 1h10m30s")
+                        help="Time interval between polling e.g. 5s, 1m, 1h10m30s. Default: 10s")
     parser.add_argument('-t', '--time',
                         help="The time to run this script e.g. 1h10m30s, 2m, 5s")
     parser.add_argument('-g', '--graph', action='store_true',
