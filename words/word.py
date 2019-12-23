@@ -48,12 +48,17 @@ def main(prog_args):
     parser = get_arg_parser()
     args = parser.parse_args(prog_args[1:])
     mask = args.mask
-    print ('looking for {} {} {}'.format(mask,
-                                         ', with {}'.format(args.chars) if args.chars else '',
-                                         ', contains {}'.format(args.word) if args.word else ''
-                                         ))
+    try:
+        length = int(mask)
+        mask = '.'*length
+    except ValueError:
+        pass
+    print('looking for {} {} {}'.format(mask,
+                                        ', with {}'.format(args.chars) if args.chars else '',
+                                        ', contains {}'.format(args.word) if args.word else ''
+                                        ))
     matches = search(mask, args.chars, args.word, args.regex, args.ij_as_y)
-    print ('found words:')
+    print('found words:')
     for w in matches:
         print(w)
 
