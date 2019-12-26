@@ -60,7 +60,7 @@ def main(prog_args):
     matches = search(mask, args.chars, args.word, args.regex, args.ij_as_y)
     print('found words:')
     for w in matches:
-        print(w)
+        print("{w}    - https://www.google.com/search?q={w}".format(w=w))
 
 
 if __name__ == '__main__':
