@@ -1,11 +1,50 @@
-#!/usr/bin/python
+#!/home/cees/.virtualenvs/ceasaro_py/bin/python
 import argparse
-import sys
-import re
+import csv
 import os
+import re
+import sys
 
 
-def search(mask, has_chars=None, has_word=None, regex=False, ij_as_y=False):
+def search_plaatsnamen_NL(mask, has_chars=None, has_word=None, regex=False, ij_as_y=False, province_code=None):
+    PROVINCES = {
+        'DR': 'Drenthe',
+        'FL': 'Flevoland',
+        'FR': 'Fryslân',
+        # 'FR': 'Friesland',
+        'GD': 'Gelderland',
+        'GR': 'Groningen',
+        'LB': 'Limburg',
+        'NB': 'Noord - Brabant',
+        'NH': 'Noord - Holland',
+        'OV': 'Overijssel',
+        'UT': 'Utrecht',
+        'ZH': 'Zuid - Holland',
+        'ZL': 'Zeeland',
+    }
+    matching_words = []
+    local_path = os.path.dirname(os.path.realpath(__file__))
+    with open(os.path.join(local_path, 'geografie/plaatsnamen_NL.csv')) as csv_file:
+        csv_reader = csv.reader(csv_file, delimiter=',')
+        line_count = 0
+        for row in csv_reader:
+            city_code, city, len_city_name, zip_code, township, province = row
+            if line_count == 0:
+                # skip first row, contains only column names
+                line_count += 1
+            else:
+                if not province_code or PROVINCES[province_code] == province:
+                    for city_name in [city.split('/')[0]]:
+                    # for city_name in city.split('/'):
+                        city_name = city_name.strip().lower()
+                        if word_matches(city_name, has_chars, has_word, ij_as_y, mask, regex):
+                            matching_words.append(city_name)
+                line_count += 1
+
+    return matching_words
+
+
+def search_open_taal(mask, has_chars=None, has_word=None, regex=False, ij_as_y=False):
     matching_words = []
     local_path = os.path.dirname(os.path.realpath(__file__))
     files = [
@@ -47,7 +86,8 @@ def get_arg_parser():
     parser.add_argument('-c', '--chars', help="word must include these characters")
     parser.add_argument('-w', '--word', help="word must include this word")
     parser.add_argument('-i', '--ij_as_y', help="treat the characters 'ij' as one letter", action='store_true')
-    parser.add_argument('-r', '--regex', help="word must match the specified regular expression", action='store_true',)
+    parser.add_argument('-r', '--regex', help="word must match the specified regular expression", action='store_true', )
+    parser.add_argument('-p', '--province', help="Province code e.g. 'GR', 'LB', 'NH' (Only for city names)",)
     return parser
 
 
@@ -57,16 +97,20 @@ def main(prog_args):
     mask = args.mask
     try:
         length = int(mask)
-        mask = '.'*length
+        mask = '.' * length
     except ValueError:
         pass
     print('looking for {} {} {}'.format(mask,
                                         ', with {}'.format(args.chars) if args.chars else '',
                                         ', contains {}'.format(args.word) if args.word else ''
                                         ))
-    matches = search(mask, args.chars, args.word, args.regex, args.ij_as_y)
+    matches = search_open_taal(mask, args.chars, args.word, args.regex, args.ij_as_y)
     print('found words:')
     for w in matches:
+        print("{w}    - https://www.google.com/search?q={w}".format(w=w))
+    matched_cities = search_plaatsnamen_NL(mask, args.chars, args.word, args.regex, args.ij_as_y, args.province)
+    print('found cities:')
+    for w in matched_cities:
         print("{w}    - https://www.google.com/search?q={w}".format(w=w))
 
 
