@@ -82,7 +82,7 @@ def word_matches(word, has_chars, has_word, ij_as_y, mask, regex):
 
 def get_arg_parser():
     parser = argparse.ArgumentParser()
-    parser.add_argument('mask', help="The mask to search words with. (eg. 'wor..' results in 'words', 'worth', etc. ")
+    parser.add_argument('mask', help="Number of characters or a mask to search words with. (eg. 'wor..' results in 'words', 'worth', etc. ")
     parser.add_argument('-c', '--chars', help="word must include these characters")
     parser.add_argument('-w', '--word', help="word must include this word")
     parser.add_argument('-i', '--ij_as_y', help="treat the characters 'ij' as one letter", action='store_true')
