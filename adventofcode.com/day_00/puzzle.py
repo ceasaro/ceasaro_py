@@ -5,7 +5,7 @@ import sys
 def run(input_file):
     with open(input_file) as fp:
         for line in fp.readlines():
-            print(line)
+            print(line.rstrip('\n'))
 
 
 def main(prog_args):
