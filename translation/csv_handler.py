@@ -20,7 +20,7 @@ def translate(csv_file_path, columns_to_translate=None, has_header=False, encodi
             output = ''
             for column_index in columns_to_translate:
                 translated = ''
-                deeple_json = deepl_api.translate(row[column_index], target_lang='NL', source_lang='FR')
+                deeple_json = deepl_api.translate(row[column_index], target_lang='BE', source_lang='FR')
                 if deeple_json:
                     translations = deeple_json.get('translations', [])
                     translated = ','.join(t.get('text') for t in translations)
