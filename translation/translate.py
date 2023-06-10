@@ -1,16 +1,13 @@
 #!/home/cees/.virtualenvs/ceasaro_py/bin/python
 import argparse
+import os
 import sys
-
-import csv_handler
-import yaml_handler
-import json_handler
-import deepl_api
+from factory import TranslatorFactory
 
 
 def get_arg_parser():
     parser = argparse.ArgumentParser()
-    parser.add_argument('file', help="file to translate", )
+    parser.add_argument('file_path', help="file or directory to translate", )
     parser.add_argument('-l', '--target_lang', help="language to translate to", )
     parser.add_argument('-s', '--source_lang', help="language of text to translate", )
     return parser
@@ -19,19 +16,20 @@ def get_arg_parser():
 def main(prog_args):
     parser = get_arg_parser()
     args = parser.parse_args(prog_args[1:])
-    file = args.file
+    file_path = args.file_path
     target_lang = args.target_lang
+    source_lang = args.source_lang
 
-    print(f"translating {file} to {target_lang}")
-    if file.endswith('.csv'):
-        csv_handler.translate(file, columns_to_translate=[1, ])
-    if file.endswith('.yaml') or file.endswith('.yml'):
-        yaml_handler.translate(file, target_lang)
-    if file.endswith('.json'):
-        json_handler.translate(file, target_lang)
-    # resp = deepl_api.translate('Werkt het nu?', target_lang=target_lang)
-    # print(resp)
-    # print(resp.json())
+    if os.path.isdir(file_path):
+        for subdir, dirs, files in os.walk(file_path):
+            for file in files:
+                file_path = os.path.join(subdir, file)
+                TranslatorFactory().translate_file(file_path, target_lang, source_lang=source_lang)
+    elif os.path.isfile(file_path):
+        print(f"{file_path} is a normal file")
+    else:
+        print(f"{file_path} is a special file (socket, FIFO, device file)")
+    print()
 
 
 if __name__ == '__main__':
