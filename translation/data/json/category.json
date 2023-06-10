@@ -1,0 +1,152 @@
+{
+  "CATEGORIES": {
+    "CREATE_FIRST": {
+      "SUBTITLE": "Les catégories sont essentielles pour organiser les produits dans le catalogue.",
+      "TITLE": "Créez votre première catégorie pour initier votre catalogue !"
+    },
+    "FILTERS": {
+      "CLEAR": "Effacer les filtres",
+      "NAME_LABEL": "Rechercher une catégorie",
+      "NAME_PLACEHOLDER": "Rechercher un nom de catégorie",
+      "PARENTS_LABEL": "Catégories parentes",
+      "PARENTS_PLACEHOLDER": "Filtrer par catégories parentes",
+      "WAREHOUSES_FULL_LABEL": "Atelier local",
+      "WAREHOUSES_LABEL": "Ateliers",
+      "WAREHOUSES_PLACEHOLDER": "Filtrer par ateliers"
+    },
+    "NO_MATCH": "Aucune catégorie ne correspond à votre recherche",
+    "ICON": "/media/cirx/category_title_icon.svg",
+    "LIST_HEADERS": {
+      "ACTION": "ACTION",
+      "NAME": "NOM DE CATÉGORIE",
+      "PARENT_CATEGORY": "CATÉGORIE PARENTE",
+      "PRODUCTS": "PRODUITS PUBLIÉS",
+      "STATUS": "STATUT",
+      "WAREHOUSES": "ATELIERS"
+    },
+    "PAGINATION": "Catégories {firstCatDisplayed} à {lastCatDisplayed} sur {totalDisplayed}",
+    "SEARCH": {
+      "BY_CATEGORY": "Rechercher par catégorie",
+      "QUESTIONS": {
+        "BRAND": "Quelle est la marque ?",
+        "CATEGORY": "Quelle est la catégorie ?",
+        "CATEGORY_PRECISE": "Précisez de quelle catégorie il s'agit ?",
+        "MODEL": "Quel est le modèle ?",
+        "SUBCATEGORY_PRECISE": "De quelle sous-catégorie s'agit-il ?"
+      }
+    },
+    "TITLE": "Catégories"
+  },
+  "CATEGORY": {
+    "ARCHIVE_MODAL": {
+      "BUTTON": {
+        "CANCEL": "Annuler",
+        "CLOSE_MODAL": "Fermer la fenêtre",
+        "CONFIRM": "Confirmer"
+      },
+      "CHILD_CATEGORIES": {
+        "CONTENT": "Cette catégorie | Cette catégorie contient encore | Cette catégorie contient encore ",
+        "NUMBER": "ne contient plus de sous catégorie | {numberOfChildCategories} sous-catégorie | {numberOfChildCategories} sous-catégories"
+      },
+      "CONTENT": {
+        "CAN_NOT_DELETE": "Vous ne pouvez pas supprimer la catégorie \"{category}\" car :",
+        "DELETE": "Êtes-vous sûr de vouloir supprimer la catégorie \"{category}\" ?"
+      },
+      "CORRECTION": "Corrigez d'abord les erreurs ci-dessus puis réessayez",
+      "PRODUCTS": {
+        "CONTENT": "n'est rattaché à cette catégorie | est encore rattaché à cette catégorie | sont encore rattachés à cette catégorie",
+        "NUMBER": "Aucun produit | {numberOfProducts} produit | {numberOfProducts} produits"
+      },
+      "QUESTIONS": {
+        "CONTENT": "n'est rattaché à cette catégorie | est encore rattaché à cette catégorie | sont encore rattachés à cette catégorie",
+        "NUMBER": "Aucune question | {numberOfQuestions} question | {numberOfQuestions} questions"
+      },
+      "TITLE": {
+        "CAN_NOT_DELETE": "Vous ne pouvez pas supprimer la catégorie",
+        "DELETE": "Supprimer la catégorie"
+      }
+    },
+    "CARD": {
+      "CREATE_TITLE": "Créer une catégorie",
+      "EDIT_TITLE": "Editer une catégorie",
+      "SUBTITLE": "@:(SHARED.FEEDBACKS.REQUIRED_GLOBAL)"
+    },
+    "CREATE": "Créer une catégorie",
+    "CREATE_FEEDBACK": {
+      "BUYER_FAILURE": "Il n'y a pas de repreneur de configuré.",
+      "FAILURE": "Echec lors de la création de la catégorie.",
+      "SUCCESS": "Félicitations ! La catégorie \"{categoryName}\" a été créée avec succès.",
+      "SUCCESS_TOAST_TITLE": "Création effectuée",
+      "SUCCESS_ACTION": "Pour configurer les questions d'homologation associées à cette nouvelle catégorie, {catLink}.",
+      "SUCCESS_ACTION_LINK": "cliquer ici"
+    },
+    "CREATE_FORM": {
+      "ABSORPTION_AMOUNT_CONTROLLED_PERCENTAGE_TYPE": "du prix contrôlé",
+      "ABSORPTION_AMOUNT_DECLARED_PERCENTAGE_TYPE": "du prix déclaré",
+      "ABSORPTION_BY_PERCENTAGE_LABEL": "en pourcentage",
+      "ABSORPTION_BY_VALUE_LABEL": "en valeur",
+      "ABSORPTION_NONE_LABEL": "Aucune",
+      "ABSORPTION_TYPE_LABEL": "Absorption des écarts",
+      "ABSORPTION_VALUE_FEEDBACK": "Ce champ est requis et doit être un nombre décimal",
+      "ABSORPTION_VALUE_LABEL": "Montant max. absorbé",
+      "ABSORPTION_VALUE_PLACEHOLDER": "0",
+      "BUYER_FEEDBACK": "Ce choix est requis",
+      "BUYER_HELP": "Entité légale qui achète les produits repris dans cette catégorie. Un seul repreneur par catégorie. Contactez l’équipe CircularX pour modifier ce repreneur.",
+      "BUYER_LABEL": "Repreneur",
+      "CIRCUIT_HELP": "",
+      "CIRCUIT_HELP_ONLY_ONE_STORE_DROP": "Vous ne pouvez activer qu'un seul parcours \"Magasin - Dépôt en magasin\"",
+      "CIRCUIT_HELP_W2S": "L'activation d'un parcours \"Web - Dépôt en magasin\" implique obligatoirement la sélection d'un parcours \"Magasin - Dépôt en magasin\" sans quoi la reprise ne pourrait pas être finalisée.",
+      "CIRCUIT_LABEL": "Parcours",
+      "CURRENT_PARENT_FEEDBACK": "Catégorie parente actuelle : {parentName}",
+      "DIMENSION_HELP": "(exprimée en centimètres) pour les produits de la catégorie si celle-ci n’est pas renseignée sur la fiche produit.",
+      "DISTANT_WH_PLACEHOLDER": "Choisir les ateliers dans la liste ci-dessous",
+      "DROP_PLACEHOLDER": "Glissez le fichier ici",
+      "HEIGHT_FEEDBACK": "Ce champ doit être un nombre entier",
+      "HEIGHT_HELP": "Hauteur",
+      "HEIGHT_LABEL": "Hauteur",
+      "HEIGHT_PLACEHOLDER": "0",
+      "HIGHLIGHTING": {
+        "HELP": "Consigne affichée en rouge à la fin du parcours de reprise et dans l’e-mail de confirmation pour insister sur un point particulier",
+        "LABEL": "Consigne mise en avant",
+        "PLACEHOLDER": "Entrez ici la consigne mise en avant"
+      },
+      "IMAGE_CURRENT": "Image actuelle",
+      "IMAGE_DELETE_BUTTON": "Supprimer",
+      "IMAGE_FEEDBACK": "Le fichier doit être de type {fileTypes} et ne doit pas faire plus de {maxSize} ko",
+      "IMAGE_HELP": "Image au format {fileTypes} taille max. de {maxSize} ko",
+      "IMAGE_LABEL": "Ajouter une image",
+      "IMAGE_PLACEHOLDER": "Choisissez un fichier ou bien glissez-le ici",
+      "IMAGE_SELECTED": "Fichier sélectionné",
+      "LENGTH_FEEDBACK": "Ce champ doit être un nombre entier",
+      "LENGTH_HELP": "Longueur",
+      "LENGTH_LABEL": "Longueur",
+      "LENGTH_PLACEHOLDER": "0",
+      "NAME_LABEL": "Nom de la catégorie",
+      "NAME_PLACEHOLDER": "Nom de la catégorie",
+      "NAME_REQUIRED_FEEDBACK": "@:(SHARED.FEEDBACKS.REQUIRED_MIN_MAX)",
+      "NAME_UNIQUE_FEEDBACK": "Désolé, cet intitulé est déjà utilisé par une autre catégorie enfant de {parentCategory}",
+      "PARENT_FEEDBACK": "@:(SHARED.FEEDBACKS.REQUIRED)",
+      "PARENT_LABEL": "Catégorie parente",
+      "PARENT_NAME_FALLBACK": "cette catégorie parente",
+      "PARENT_PLACEHOLDER": "Choisir la catégorie parente",
+      "WEIGHT_FEEDBACK": "Ce champ est requis et doit être un nombre entier",
+      "WEIGHT_HELP": "Poids (exprimé en grammes) max. pour les produits de la catégorie si celui-ci n’est pas renseginé sur la fiche produit.",
+      "WEIGHT_LABEL": "Poids max",
+      "WEIGHT_PLACEHOLDER": "0",
+      "WH_ALERT": "Si plus d'un atelier est défini, alors le magasin devra choisir un atelier de destination au moment de l'expédition",
+      "WH_FEEDBACK": "Ce choix est requis",
+      "WH_LABEL": "Ateliers référents",
+      "WIDTH_FEEDBACK": "Ce champ doit être un nombre entier",
+      "WIDTH_HELP": "Largeur",
+      "WIDTH_LABEL": "Largeur",
+      "WIDTH_PLACEHOLDER": "0"
+    },
+    "EDIT": "Editer une catégorie",
+    "TITLE": "Catégorie",
+    "UPDATE_FEEDBACK": {
+      "FAILURE": "Echec lors de la modification de la catégorie.",
+      "SUCCESS": "Félicitations ! La catégorie \"{categoryName}\" a été modifiée avec succès.",
+      "SUCCESS_TOAST_TITLE": "Mise à jour effectuée"
+    }
+  }
+}

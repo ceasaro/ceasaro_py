@@ -1,0 +1,485 @@
+{
+  "BUYBACK": {
+    "ACTION": "/media/cirx/search.svg",
+    "ALERT": {
+      "CANCELLED": "La reprise a été annulée",
+      "CANCELLED_COMMENT": "Commentaire : ",
+      "CANCELLED_NO_REASON": "Cette reprise est annulée",
+      "CANCELLED_REASON": "Cette reprise est annulée pour le motif suivant : ",
+      "PRICE": "Nous vous proposons {productPrice}",
+      "PRICE_ZERO": "La valeur de reprise de votre produit est de 0€. Vous pouvez tout de même nous le confier pour qu’il soit recyclé ou réparé.",
+      "SEND_QUANRANTINE_MAIL_OK": "Le mail de litige a bien été renvoyé",
+      "SEND_QUANRANTINE_MAIL_KO": "Une erreur est survenue lors du renvoi du mail de litige"
+    },
+    "AVAILABLE_STORES": {
+      "MODAL": {
+        "SEARCH_TITLE": "Rechercher un magasin à proximité",
+        "SEARCH_PLACEHOLDER": "Rechercher par ville ou code postal",
+        "SEARCH_CRITERIA": "Rechercher un magasin par nom, ville ou code postal",
+        "GEOLOCATION": "Ma position"
+      },
+      "NO_STORE_FOUND": "0 résultat obtenu pour cette recherche",
+      "DROP_FIND_PARTNER_STORE": "Trouver un magasin"
+    },
+    "BUYBACK_EXPIRED_MODAL": {
+      "CONTENT": "Attention, la pré-déclaration (du {buybackCreatedAt}) faite par le client sur le web a plus de 15 jours. Les prix promis peuvent donc avoir été corrigés au prix du jour.",
+      "OK_BUTTON": "J’ai compris et informé le client",
+      "TITLE": "Les prix promis peuvent avoir été modifiés"
+    },
+    "BUYBACK_ZERO": {
+      "DEFAULT": "Oups... nous ne pouvons malheureusement pas reprendre votre produit, car il n'est plus valorisé ou ne fait pas encore partie de notre programme de reprise."
+    },
+    "CANCEL_REASON": {
+      "CUSTOMER_RETRACTATION": "Rétractation client",
+      "LABEL": "Raison d'annulation",
+      "OTHER_REASON": "Autre",
+      "TECHNICAL_PROBLEM": "Problème technique"
+    },
+    "COMMENT_LABEL": "Commentaire",
+    "CREATE_FIRST": {
+      "SUBTITLE": "Les produits portent les caractéristiques essentielles pour permettre de réaliser des reprises.",
+      "TITLE": "Créez la première reprise !"
+    },
+    "CSV_DOWNLOAD": "Export CSV",
+    "DETAIL_TITLE": "Détail de la reprise {id}",
+    "EDIT": "Editer une reprise",
+    "ERROR_MESSAGE": {
+      "BUYBACK_CANCELLED": "Cette reprise a été annulée",
+      "CANNOT_REACH_BUYER": "Nous n'arrivons pas à générer le bon de cession car la connexion avec le prestataire ne répond pas.",
+      "CANNOT_REACH_TRANSPORT_COMPANY": "Nous n'arrivons pas à générer l'étiquette de transport car la connexion avec le prestataire ne répond pas.",
+      "NO_BUYBACK_PRICE": "Oups, aucun prix de reprise n’est défini pour ce produit. Vous ne pouvez pas terminer la reprise. Vous pouvez vous rapprocher du responsable du programme de reprise pour définir un prix pour ces questions d'homologation.",
+      "NO_PAYMENT_MODE_FOR_CIRCUIT": "Oups, aucun mode de paiement n’est configuré pour ce produit. Vous ne pouvez pas terminer la reprise. Vous pouvez vous rapprocher du responsable du programme de reprise pour définir le ou les modes de paiement applicable.",
+      "NO_TRANSPORT_MODE": "Oups, aucun mode de transport n’est applicable à ce produit. Vous ne pouvez pas terminer la reprise. Vous pouvez vous rapprocher du responsable du programme de reprise pour définir le ou les modes de transport applicable.",
+      "NO_WAREHOUSE": "La configuration logistique de cette catégorie de produit n’est pas conforme. Merci de contacter le responsable du programme de reprise pour l’ajuster.",
+      "TECHNICAL_ERROR": "Une erreur technique est survenue. Veuillez réessayer plus tard."
+    },
+    "FILTERS": {
+      "ADVANCED_FILTERS": "Filtres avancés",
+      "CATEGORY_LABEL": "Catégories",
+      "CATEGORY_PLACEHOLDER": "Filtrer par catégories",
+      "CIRCUIT_LABEL": "Parcours de reprise",
+      "CIRCUIT_PLACEHOLDER": "Filtrer par canal de reprise",
+      "CLEAR": "Effacer les filtres",
+      "CLIENT_NAME": "Nom client",
+      "CLIENT_PLACEHOLDER": "Filtrer par nom client",
+      "CODE_NAME": "Code reprise",
+      "CODE_PLACEHOLDER": "Filtrer par numéro de reprise",
+      "DATE": "Date",
+      "DATE_PLACEHOLDER1": "De...",
+      "DATE_PLACEHOLDER2": "A...",
+      "DEFAULT_LABEL": "Filtrer par statut",
+      "EXPORT": "Exporter les résultats (.csv)",
+      "ORGANIZATION_LABEL": "Magasins",
+      "ORGANIZATION_PLACEHOLDER": "Filtrer par magasin",
+      "BUYER_LABEL": "Repreneurs",
+      "BUYER_PLACEHOLDER": "Filtrer par repreneur",
+      "PRODUCT_NAME": "Nom du produit",
+      "PRODUCT_PLACEHOLDER": "Rechercher un nom de produit",
+      "SEARCH": "Rechercher",
+      "STATUS_NAME": "Statut",
+      "STATUS_PLACEHOLDER": "Filtrer par statut",
+      "SEARCH_BRAND_PLACEHOLDER": "Rechercher une marque"
+    },
+    "ICON": "/media/cirx/buyback_icon.svg",
+    "LIST": {
+      "NO_MATCHING_BUYBACK": "Aucune reprise n'a encore été effectuée."
+    },
+    "LIST_HEADERS": {
+      "ACTION": "Action",
+      "BUYBACK_CIRCUIT": "Parcours de reprise",
+      "CATEGORY": "Catégorie",
+      "CODE": "Code reprise",
+      "CUSTOMER_NAME": "Nom client",
+      "DATE": "Date",
+      "PRICE": "Prix de reprise{0}déclaré",
+      "PRODUCT_BUYBACK": "Produit repris",
+      "STATUS": "Statut",
+      "WAREHOUSE": "Atelier{0}destinataire"
+    },
+    "PAGINATION": {
+      "LIST": "Reprises {firstBuybackDisplayed} à {lastBuybackDisplayed} sur {totalDisplayed}",
+      "LOADING": "Chargement...",
+      "NEXT": "Suivant",
+      "PREVIOUS": "Précédent"
+    },
+    "PRODUCT_MODAL": {
+      "BRAND_LABEL": "Marque constructeur",
+      "EAN_LABEL": "Code EAN ou GTIN",
+      "MODEL_LABEL": "Modèle constructeur",
+      "OK_BUTTON": "Continuer la reprise",
+      "OK_BUTTON_WAREHOUSE": "Confirmer mon choix",
+      "REFERENCE_LABEL": "Référence",
+      "TITLE": "Vérifiez le modèle et continuez la reprise"
+    },
+    "SEARCH_BUYBACK_BY_IDENTIFICATION_NUMBER": {
+      "ERROR_MESSAGE": {
+        "LENGTH": "Le code doit contenir 13 chiffres",
+        "NOT_FOUND": "Ce code reprise n'est pas reconnu.",
+        "NUMERIC": "Le code ne doit contenir que des chiffres",
+        "REQUIRED": "Le code doit être saisi"
+      },
+      "OK_BUTTON": "Enregistrer",
+      "PLACEHOLDER": "ex: 9333759656911"
+    },
+    "TABS": {
+      "BUTTONS": {
+        "CANCEL_BUYBACK": "Annuler la reprise",
+        "GIFT_CARD": "Télécharger la carte cadeau",
+        "GO_BACK": "Retour",
+        "MARK_ITEM_AS_LOST": "Déclarer le produit perdu",
+        "RETURN_TRANSPORT_ORDER": "Télécharger le bon de transport retour",
+        "RETURN_TRANSPORT_ORDER_ERROR": "Bon de transport retour indisponible",
+        "RETURN_TRANSPORT_ORDER_GENERATE": "Générer le bon de transport retour",
+        "RETURN_TRANSPORT_ORDER_LOADING": "Chargement du bon de transport retour...",
+        "TRACEABILITY_LABEL": "Télécharger l'étiquette de traçabilité",
+        "TRANSFER_ORDER": "Télécharger le bon de cession",
+        "TRANSFER_ORDER_ERROR": "Bon de cession indisponible",
+        "TRANSFER_ORDER_LOADING": "Chargement du bon de cession...",
+        "TRANSPORT_ORDER": "Télécharger le bon de transport",
+        "TRANSPORT_ORDER_ERROR": "Bon de transport indisponible",
+        "TRANSPORT_ORDER_LOADING": "Chargement du bon de transport...",
+        "SEND_QUANRANTINE_MAIL": "Envoyer le mail de litige",
+        "VOUCHER": "Télécharger le bon d'achat"
+      },
+      "BUYBACK_PRODUCT": {
+        "BONUS_PAYMENT": "Bonus de mode de paiement",
+        "BRAND": "Marque constructeur",
+        "BUYBACK_CIRCUIT": "Parcours de la reprise",
+        "BUYBACK_ID": "Reprise",
+        "CATEGORY": "Catégorie",
+        "CONTROLED_PRICE": "Montant contrôlé",
+        "DECLARED_PRICE": "Montant déclaré",
+        "ITEM_ID": "ID stock de l'item",
+        "ITEM_STATUS": "Statut de l'item",
+        "MODEL": "Modèle constructeur",
+        "NAME": "Désignation constructeur",
+        "PAID_PRICE": "Montant payé",
+        "PREDECLARED_PRICE": "Montant prédéclaré",
+        "STORE": "Magasin",
+        "TITLE": "Reprise produit",
+        "VALIDATED_PRICE": "Montant validé"
+      },
+      "CUSTOMER": {
+        "CI": "Pièce d'identité",
+        "TITLE": "Client"
+      },
+      "DIAGNOSTIC": {
+        "HEADERS": {
+          "COMMENT": "Commentaires",
+          "DIAGNOSTIC": "Diagnostic",
+          "CONTROLLED": "Homologation",
+          "DECLARED": "Déclaré",
+          "PRE_DECLARED": "Pré-déclaration"
+        },
+        "STANDARD_ROWS": {
+          "BRAND": "Marque",
+          "DATE": "Date",
+          "MODEL": "Modèle constructeur",
+          "NAME": "Nom",
+          "PRICE": "Prix",
+          "STATE": "État du produit",
+          "USER": "Utilisateur"
+        }
+      },
+      "HEADERS": {
+        "INFO": "Informations de la reprise",
+        "RESULTS": "Résultats de l'homologation"
+      },
+      "OTHER": {
+        "BUYER": "Repreneur",
+        "IMEI": "IMEI",
+        "SERIAL_NUMBER": "Numéro de série",
+        "TITLE": "Autres",
+        "WAREHOUSE": "Atelier de destination",
+        "ROOT": "Enseigne"
+      },
+      "PAYMENT": {
+        "GIFTCARD": "N° de carte",
+        "IBAN": "IBAN",
+        "ID": "ID de paiement",
+        "STATUS": "Statut",
+        "TITLE": "Mode de paiement",
+        "TYPE": "Type",
+        "VOUCHER": "N° de bon"
+      },
+      "STATUS": {
+        "SUB_TITLE": "Historique des différents statuts de la reprise",
+        "TITLE": "Statuts"
+      },
+      "TRANSPORT": {
+        "COMPANY": "Prestataire",
+        "LAST_STATUS": "Dernier statut fourni par le prestataire",
+        "TITLE": "Mode de transport",
+        "TRACKING_LINK": "Lien de suivi"
+      }
+    },
+    "TITLE": "Reprises",
+    "WIZARD": {
+      "ALERT_PRESELECTED": "Dossier Web n°{identificationNumber} : Vérifiez les déclarations du client et continuez. Pas le bon produit ? {changeProductLink} pour le changer.",
+      "ALERT_PRESELECTED_LINK": "Cliquez ici",
+      "BUYBACK_OPTIONS": {
+        "FORM_SECTIONS_SUBTITLES_STORE": {
+          "PAYMENT": "Comment le client souhaite-t-il être payé ?",
+          "TRANSPORT": "Comment le client souhaite-t-il expédier son produit ?"
+        },
+        "FORM_SECTIONS_SUBTITLES_WEB": {
+          "PAYMENT": "Comment souhaitez-vous être payé ?",
+          "TRANSPORT": "Comment souhaitez-vous expédier votre produit ?"
+        },
+        "FORM_SECTIONS_TITLES": {
+          "CHOOSE_TRANSPORT": "Choisissez votre mode d'envoi",
+          "PAYMENT": "Mode de paiement",
+          "TRANSPORT": "Mode de transport"
+        },
+        "PAYMENT_MODE": {
+          "BONUS_LABEL": "offerts",
+          "DISABLED": "Veuillez sélectionner un mode de transport en premier",
+          "FEEDBACK": "Veuillez séléctionner un mode de paiement",
+          "LABEL": "Mode de paiement",
+          "MALUS_LABEL": "sur votre reprise",
+          "NONE": "Désolé, aucun mode de paiement disponible"
+        },
+        "TITLE": "Sélectionnez les options",
+        "TRANSPORT_MODE": {
+          "FEEDBACK": "Veuillez sélectionner un mode de transport",
+          "FREE": "Gratuit",
+          "LABEL": "Mode de transport"
+        },
+        "WAREHOUSE": {
+          "FEEDBACK": "Veuillez choisir un atelier"
+        }
+      },
+      "CARD": {
+        "ESTIMATED_VALUE_LABEL": "Valeur estimée",
+        "HOVER_IMAGE": "Survoler pour zoomer",
+        "TITLE": "Produit repris",
+        "TITLE_MODAL_IMAGE_HD": "Détail du produit",
+        "TOTAL_VALUE": "Total de la reprise"
+      },
+      "CONFIRMATION": {
+        "BUYBACK_AMOUNT": "Valeur de reprise estimée : {paidPrice}",
+        "BUYBACK_TAG": "Reprise n°{buybackIdNb}",
+        "DOC_BUTTONS_TITLE": "Vos documents à télécharger",
+        "FOLLOW_UP_PAGE": {
+          "BUTTON": "Télécharger la fiche de suivi",
+          "DOC_ERROR": "Erreur - document non disponible",
+          "MONO_BUYBACK_SUBTITLE": "Votre reprise a bien été enregistrée ! Téléchargez la fiche de suivi et rendez-vous dans l’un de nos magasins ({linkToStoresList}) pour finaliser votre reprise.",
+          "MULTI_BUYBACK_SUBTITLE": "Vos reprises ont bien été enregistrées ! Téléchargez la fiche de suivi et rendez-vous dans l’un de nos magasins ({linkToStoresList}) pour finaliser vos reprises.",
+          "SUBTITLE_STORES_LINK": "voir la liste des magasins partenaires",
+          "TITLE": "Rendez-vous en magasin pour finaliser votre reprise | Rendez-vous en magasin pour finaliser vos reprises"
+        },
+        "FOOTER": "Le bon de cession a aussi été envoyé par email au client",
+        "GIFT_CARD_BUTTON": "Télécharger la carte cadeau",
+        "GIFT_CARD_BUTTON_LOADING": "Préparation de la carte cadeau",
+        "GIFT_CARD_ERROR_BUTTON": "Carte cadeau indisponible",
+        "GIFT_CARD_TITLE": "Votre carte cadeau est disponible !",
+        "GO_TO_MAIL_PAGE": {
+          "SUBTITLE": "Nous vous avons envoyé un email avec les documents à télécharger et les consignes à suivre pour nous envoyer votre produit. (Soyez patient, l’email peut prendre quelques minutes à arriver...)",
+          "SUBTITLE_MULTIPLE": "Nous vous avons envoyé un email avec les documents à télécharger et les consignes à suivre pour nous envoyer vos produits. (Soyez patient, l’email peut prendre quelques minutes à arriver...)",
+          "TITLE": "Reprise créée avec succès !",
+          "TITLE_MULTIPLE": "Reprises créées avec succès !"
+        },
+        "INSTRUCTIONS_TITLE": "Que dois-je faire maintenant ?",
+        "LOADING": {
+          "ERROR": "C’est tout bon ! Un email va vous être envoyé dans les prochaines 24 heures avec toutes les consignes pour envoyer gratuitement votre produit.",
+          "FIRST_MESSAGE": "Patientez quelques instants, le temps que tout soit prêt.",
+          "SECOND_MESSAGE": "Toujours en train de mouliner... {bikeEmoji}",
+          "THIRD_MESSAGE": "Tenez bon... {prayEmoji}"
+        },
+        "SUBTITLE": "Le bon de cession avec le code de traçabilité du produit a bien été généré",
+        "SUBTITLE_DOCS_DASHBOARD": "Téléchargez et imprimez les documents puis suivez rigoureusement les indications ci-dessous",
+        "SUBTITLE_DOCS_PUBLIC": "Téléchargez et imprimez les documents puis suivez les consignes ci-dessous pour nous envoyer votre produit | Téléchargez et imprimez les documents puis suivez les consignes ci-dessous pour nous envoyer vos produits",
+        "TITLE": "Reprise créée avec succès ! | Reprises créées avec succès !",
+        "TRACEABILITY_LABEL_BUTTON": "Télécharger l'étiquette de traçabilité",
+        "TRACEABILITY_LABEL_BUTTON_LOADING": "Préparation de l'étiquette de traçabilité",
+        "TRANSFER_ORDER_BUTTON": "Télécharger le bon de cession",
+        "TRANSFER_ORDER_BUTTON_LOADING": "Préparation du bon de cession",
+        "TRANSFER_ORDER_ERROR": "Bon de cession indisponible",
+        "TRANSFER_ORDER_GENERATION": "Génération du bon de cession",
+        "TRANSPORT_DOWNLOAD": "Télécharger l'étiquette de transport",
+        "TRANSPORT_ERROR": "Étiquette de transport indisponible",
+        "TRANSPORT_GENERATION": "Génération de l'étiquette de transport",
+        "VOUCHER_BUTTON": "Télécharger le bon d'achat",
+        "VOUCHER_BUTTON_LOADING": "Préparation du bon d'achat",
+        "VOUCHER_ERROR_BUTTON": "Bon d'achat indisponible",
+        "VOUCHER_TITLE": "Votre bon d'achat est disponible !"
+      },
+      "CONFIRMATION_FOLLOW_UP_SHEET": {
+        "SUBTITLE": "La fiche de suivi de la reprise a bien été générée"
+      },
+      "CUSTOMER_INFO": {
+        "CLIENTADDRESS": {
+          "LABEL": "Adresse"
+        },
+        "CLIENTCITY": {
+          "FEEDBACK": "@:(SHARED.FEEDBACKS.REQUIRED_MIN_MAX)",
+          "LABEL": "Ville",
+          "PLACEHOLDER": "Ville"
+        },
+        "CLIENTCOUNTRY": {
+          "FEEDBACK": "Veuillez sélectionner un pays",
+          "LABEL": "Pays",
+          "PLACEHOLDER": "Choisir un pays"
+        },
+        "CLIENTEMAIL": {
+          "FEEDBACK": "@:(SHARED.FEEDBACKS.EMAIL)",
+          "LABEL": "Email",
+          "PLACEHOLDER": "Email"
+        },
+        "CLIENTFIRSTNAME": {
+          "FEEDBACK": "@:(SHARED.FEEDBACKS.REQUIRED_MIN_MAX)",
+          "LABEL": "Prénom",
+          "PLACEHOLDER": "Prénom client"
+        },
+        "CLIENTLASTNAME": {
+          "FEEDBACK": "@:(SHARED.FEEDBACKS.REQUIRED_MIN_MAX)",
+          "LABEL": "Nom",
+          "PLACEHOLDER": "Nom client"
+        },
+        "CLIENTNATIONALIDENTIFICATION": {
+          "FEEDBACK": {
+            "INVALID": "Ce champ est invalide et/ou doit contenir entre 2 et 255 caractères",
+            "NO_TYPE": "Veuillez choisir un type de pièce d'identité avant de remplir ce champ",
+            "REQUIRED": "Ce champ est requis"
+          },
+          "LABEL": "Numéro",
+          "PLACEHOLDER": "Numéro"
+        },
+        "CLIENTNATIONALIDENTIFICATIONAUTORITYDELIVERY": {
+          "DESCRIPTION": "Si non visible sur le document, indiquez le nom du pays de délivrance",
+          "FEEDBACK": "Veuillez saisir l'autorité de délivrance",
+          "LABEL": "Autorité de délivrance",
+          "PLACEHOLDER": "Autorité de délivrance"
+        },
+        "CLIENTNATIONALIDENTIFICATIONDELIVERYDATE": {
+          "FEEDBACK": "Veuillez sélectionner une date de délivrance",
+          "LABEL": "Date de délivrance",
+          "PLACEHOLDER_DATE": "01/01/{year}"
+        },
+        "CLIENTNATIONALIDENTIFICATIONTYPE": {
+          "FEEDBACK": "Veuillez sélectionner un type de pièce d'identité",
+          "LABEL": "Type",
+          "PLACEHOLDER": "Choisir un type"
+        },
+        "CLIENTPHONE": {
+          "FEEDBACK": "Veuillez entrer un numéro de téléphone valide",
+          "LABEL": "Téléphone",
+          "PLACEHOLDER": "Téléphone"
+        },
+        "CLIENTSTREET": {
+          "FEEDBACK": "@:(SHARED.FEEDBACKS.REQUIRED_MIN_MAX)",
+          "LABEL": "Adresse",
+          "PLACEHOLDER": "Numéro et nom de la voie"
+        },
+        "CLIENTSTREETMORE": {
+          "FEEDBACK": "@:(SHARED.FEEDBACKS.REQUIRED_MIN_MAX)",
+          "LABEL": "",
+          "PLACEHOLDER": "Complement d'adresse"
+        },
+        "CLIENTZIPCODE": {
+          "FEEDBACK": "Ce champ est requis et doit contenir entre 2 et 8 caractères",
+          "LABEL": "Code postal",
+          "PLACEHOLDER": "Code postal"
+        },
+        "FORM_SECTIONS_FEEDBACKS": {
+          "ID": "Nous vous demandons votre pièce d’identité car c’est une obligation légale. <span class='emoji'>&#x261D;</span>",
+          "PAYMENT": "Nous en avons besoin pour vous verser le montant de la reprise directement sur votre compte bancaire."
+        },
+        "FORM_SECTIONS_TITLES": {
+          "CONTACT_INFO": "Coordonnées",
+          "ID": "Pièce d'identité",
+          "PAYMENT": "Informations bancaires"
+        },
+        "IBAN": {
+          "FEEDBACK": "Format de l'iban invalide",
+          "LABEL": "IBAN",
+          "PLACEHOLDER": "FR76 3000 6000 0112 3456 7890 189"
+        },
+        "MANUAL_BANK_TRANSFER_IBAN": {
+          "FEEDBACK": "Format de l'iban invalide",
+          "LABEL": "IBAN",
+          "PLACEHOLDER": "FR76 3000 6000 0112 3456 7890 189"
+        },
+        "STORE_TITLE": "Saisissez les informations personnelles du client",
+        "WEB_TITLE": "Dites-nous en plus sur vous"
+      },
+      "FORMS": {
+        "ACCEPTED_TERMS_OF_SERVICE": {
+          "BEGINNING": "Oui, j'ai lu et j'accepte les {tosLink}.",
+          "INVALID_FEEDBACK": "Veuillez accepter les conditions générales pour continuer.",
+          "LINK": "conditions générales du service"
+        },
+        "LOADING_BUTTON": "Chargement...",
+        "RESET_BUTTON": "Retour",
+        "VALIDATE_AND_RESTART_BUTTON": "Valider et ajouter un autre produit",
+        "VALIDATE_BUYBACK_BUTTON": "Valider la reprise",
+        "VALID_BUTTON": "Valider"
+      },
+      "IMEI_COLLECT": {
+        "IMEI" : "IMEI",
+        "FORM_FEEDBACK": "Le numéro IMEI que vous avez renseigné comporte une erreur. Vérifiez votre saisie",
+        "FORM_HELP": "Code de 15 à 17 chiffres. Ne pas reporter les “/” ou “-”. En cas de multi-sim, renseignez l’IMEI 1.",
+        "FORM_LABEL": "Pour connaître le code IMEI de l'appareil, tapez *#06# sur le clavier.",
+        "FORM_PLACEHOLDER": "ex: 3242568765432",
+        "TITLE": "Indiquez ou vérifiez le n°IMEI de l’appareil",
+        "NOT_IN_PRODUCT_TAC_CODES": "Le numéro IMEI ne correspond pas au modèle en cours de reprise"
+      },
+      "NAV_BAR": {
+        "BUYBACK_OPTIONS": "Options",
+        "BUYBACK_SEARCH": "Recherche",
+        "BUYBACK_SUMMARY": "Récapitulatif",
+        "CUSTOMER_INFORMATION": "Information client",
+        "DIAGNOSTIC_PRODUCT": "Déclaration"
+      },
+      "QUESTIONS": {
+        "ALERT": "Veuillez sélectionner une réponse pour passer à la question suivante.",
+        "CONTINUE_BUTTON": "Continuer",
+        "GO_BACK_BUTTON": "Retour",
+        "INDEX": "Question {idx} sur {nbQuestions}",
+        "LOADING_BUTTON": "Calcul du prix...",
+        "PREVIOUS_BUTTON": "Précédent",
+        "TITLE": "Déclarez l’état du produit",
+        "VALID_BUTTON": "Valider"
+      },
+      "SEARCH": {
+        "TITLE": "Recherchez le produit du client",
+        "PRODUCT": {
+          "NO_RESULTS": "Vérifiez votre saisie ou envoyez-nous la référence du produit recherché à l’adresse {sellerSupportEmail}. Notre équipe étudiera la possibilité de l’ajouter au catalogue.",
+          "BACK_TO_CATALOG": "Retourner sur le catalogue"
+        },
+        "NO_RESULTS": "Aucun élément ne correspond à votre recherche. Vérifiez votre saisie ou lancez une nouvelle recherche",
+        "NEW_SEARCH_LABEL": "Nouvelle recherche"
+      },
+      "SEARCH_SCAN": {
+        "CAMERA_PERMISSION": "Veuillez autoriser l'accès à la caméra",
+        "TITLE": "Scannez le code-barre de votre produit"
+      },
+      "SUMMARY": {
+        "DIAGNOSTIC": {
+          "TITLE": "Homologation"
+        },
+        "INFO": {
+          "STORE_TITLE": "Informations client",
+          "WEB_TITLE": "Vos informations personnelles"
+        },
+        "OPTIONS": {
+          "TITLE": "Options"
+        },
+        "PRODUCT": {
+          "ESTIMATED_VALUE_LABEL": "Valeur estimée",
+          "TITLE": "Votre article | Vos articles",
+          "TOTAL_LABEL": "Total de la reprise"
+        },
+        "SUBTITLE_STORE": "Vérifiez les informations et validez la reprise",
+        "SUBTITLE_WEB": "Vérifiez les informations et acceptez nos conditions générales",
+        "TITLE": "Vous y êtes presque !",
+        "TOTAL": {
+          "OPTIONS_LABEL": "Montant total des options",
+          "PRODUCTS_LABEL": "Montant total des articles",
+          "TITLE": "Total général",
+          "TOTAL_LABEL": "Total des reprises"
+        }
+      }
+    }
+  }
+}

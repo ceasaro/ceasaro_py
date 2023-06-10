@@ -28,6 +28,7 @@ def translate(to_translate, target_lang, source_lang=None):
     Deppl documentation see https://www.deepl.com/docs-api/translate-text/
     :param to_translate:
     :param target_lang:
+    :param source_lang:
     :return:
     """
     params = {'text': to_translate, 'target_lang': target_lang}
@@ -36,3 +37,12 @@ def translate(to_translate, target_lang, source_lang=None):
     resp = __get(path='translate', params=params)
     if resp.status_code == 200:
         return resp.json()
+
+
+def translate_text(text, target_lang, source_lang=None):
+    deeple_json = translate(text, target_lang=target_lang, source_lang=source_lang)
+    translated = None
+    if deeple_json:
+        translations = deeple_json.get('translations', [])
+        translated = ','.join(t.get('text') for t in translations)
+    return translated or text
