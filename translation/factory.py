@@ -1,8 +1,9 @@
 from handlers.json_handler import JSONHandler
+from handlers.yaml_handler import YAMLHandler
 
 
 class TranslatorFactory:
-    handlers = [JSONHandler, ]
+    handlers = [JSONHandler, YAMLHandler, ]
 
     def translate_file(self, file_path, target_lang, source_lang=None):
 
