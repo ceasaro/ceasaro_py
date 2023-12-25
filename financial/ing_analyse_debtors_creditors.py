@@ -20,7 +20,7 @@ def get_arg_parser():
     parser.add_argument('csv_file')
     parser.add_argument('-m', '--month_year',
                         help="Only use transaction within this month year. eg -m 08-2018")
-    parser.add_argument('-dc_a', '--accounts_out', default=0,
+    parser.add_argument('-dc_a', '--accounts_out', default=20,
                         help="A number how many accounts should be printed. defaults to 20")
     return parser
 

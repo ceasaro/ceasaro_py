@@ -37,48 +37,51 @@ def analyse_csv_file(ing_csv_file, start_date=None, end_date=None):
         for row in csv_reader:
             date, desc, account_number, from_account, code, in_out, amount, mutation, notes = row
             date = str_to_date(date)
+            # import pdb; pdb.set_trace()
             if start_date <= date <= end_date:
                 amount = float(amount.replace(',', '.'))
                 if code == 'DV':
                     costs_business_traffic += amount
-                account = next((a for a in accounts if a.account_number == from_account),
-                               next((c.get_account(from_account) for c in (creditors+debtors) if c.has_account_number(from_account)), None)
+                account_name = from_account or code
+                account = next((a for a in accounts if a.account_number == account_name),
+                               next((c.get_account(account_name) for c in (creditors+debtors) if c.has_account_number(account_name)), None)
                                )
                 if not account:
-                    account = Account(from_account, desc)
+                    account = Account(account_name, desc)
                     client = get_client_by_account(account)
                     if client:
                         client.add_account(account)
                     else:
                         accounts.append(account)
 
-                if in_out == "Bij":
+                if in_out in ["Bij", 'Credit']:
                     total_in += amount
-                if in_out == "Af":
+                if in_out in ["Af", "Debit"]:
                     total_out += amount
                 account.add_transaction(date, code, in_out, amount, mutation, notes)
 
 
 def init_clients():
-    creditors.append(Client('Groendaktotaal', 'NL73ABNA0627226078'))
-    creditors.append(Client('Kingbee BV', 'NL79INGB0004309860'))
-    creditors.append(Client('Tooltrac LTD',
-                            ['NL03BUNQ2291341480', 'NL40ASNB0942657403', 'NL52SNSB0858861860', 'NL94INGB0005717933']))
-    creditors.append(Client('ULRIC BEHEER BV', 'NL44INGB0670476323'))
-    creditors.append(Client('Make-A-Wish Nederland', ['NL48RABO0366021222', 'NL48RABO0366004344']))
-    creditors.append(Client('The Online Media Company', 'NL11INGB0006559738'))
-    creditors.append(Client('Karper-Camping', 'NL86RABO0304490237'))
-
-    debtors.append(Client('Belastingdienst', 'NL86INGB0002445588'))
-    debtors.append(Client('Prive rekening yasmine', 'NL49INGB0752540173'))
-    debtors.append(Client('Aflossing hypotheek', 'NL37INGB0007726083'))
-    # debtors.append(Client('', ''))
-    debtors.append(Client('CAROLINE VAN STAVEREN', 'NL74INGB0004523059'))
-    debtors.append(Client('Sara', 'NL04ABNA0442858353'))
-    debtors.append(Client('PPRO Financial Ltd', 'DE42700111104107387000'))
-    debtors.append(Client('A Elamine', 'NL22INGB0002893134'))
-    debtors.append(Client('VODAFONE LIBERTEL B.V.', 'NL83DEUT0265121817'))
-    debtors.append(Client('PayPal (Europe) S.a.r.l. et Cie., S.C.A.)', 'DE88500700100175526303'))
+    creditors.append(Client('JESLEE', 'NL51INGB0657750476'))
+    # creditors.append(Client('Groendaktotaal', 'NL73ABNA0627226078'))
+    # creditors.append(Client('Kingbee BV', 'NL79INGB0004309860'))
+    # creditors.append(Client('Tooltrac LTD',
+    #                         ['NL03BUNQ2291341480', 'NL40ASNB0942657403', 'NL52SNSB0858861860', 'NL94INGB0005717933']))
+    # creditors.append(Client('ULRIC BEHEER BV', 'NL44INGB0670476323'))
+    # creditors.append(Client('Make-A-Wish Nederland', ['NL48RABO0366021222', 'NL48RABO0366004344']))
+    # creditors.append(Client('The Online Media Company', 'NL11INGB0006559738'))
+    # creditors.append(Client('Karper-Camping', 'NL86RABO0304490237'))
+    #
+    # debtors.append(Client('Belastingdienst', 'NL86INGB0002445588'))
+    # debtors.append(Client('Prive rekening yasmine', 'NL49INGB0752540173'))
+    # debtors.append(Client('Aflossing hypotheek', 'NL37INGB0007726083'))
+    # # debtors.append(Client('', ''))
+    # debtors.append(Client('CAROLINE VAN STAVEREN', 'NL74INGB0004523059'))
+    # debtors.append(Client('Sara', 'NL04ABNA0442858353'))
+    # debtors.append(Client('PPRO Financial Ltd', 'DE42700111104107387000'))
+    # debtors.append(Client('A Elamine', 'NL22INGB0002893134'))
+    # debtors.append(Client('VODAFONE LIBERTEL B.V.', 'NL83DEUT0265121817'))
+    # debtors.append(Client('PayPal (Europe) S.a.r.l. et Cie., S.C.A.)', 'DE88500700100175526303'))
     debtors.append(Client('GEEN TEGEN NUMMER', ''))
 
 

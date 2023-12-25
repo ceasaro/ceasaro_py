@@ -40,9 +40,9 @@ class Account(object):
         self.total_out = 0
 
     def add_transaction(self, date, code, in_out, amount, mutation, notes):
-        if in_out == 'Bij':
+        if in_out in ["Bij", 'Credit']:
             self.total_in += amount
-        if in_out == 'Af':
+        if in_out in ["Af", "Debit"]:
             self.total_out += amount
 
     def __eq__(self, other):
