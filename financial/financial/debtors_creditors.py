@@ -43,22 +43,32 @@ def analyse_csv_file(ing_csv_file, start_date=None, end_date=None):
                 if code == 'DV':
                     costs_business_traffic += amount
                 account_name = from_account or code
-                account = next((a for a in accounts if a.account_number == account_name),
-                               next((c.get_account(account_name) for c in (creditors+debtors) if c.has_account_number(account_name)), None)
-                               )
-                if not account:
-                    account = Account(account_name, desc)
-                    client = get_client_by_account(account)
-                    if client:
-                        client.add_account(account)
-                    else:
-                        accounts.append(account)
+                account = get_or_create_account(account_name, desc)
 
                 if in_out in ["Bij", 'Credit']:
                     total_in += amount
                 if in_out in ["Af", "Debit"]:
                     total_out += amount
-                account.add_transaction(date, code, in_out, amount, mutation, notes)
+                account.add_transaction(date, code, in_out, amount, desc, mutation, notes)
+
+
+def get_or_create_account(account_name, desc):
+    account = get_account(account_name)
+    if not account:
+        account = Account(account_name, desc)
+        client = get_client_by_account(account)
+        if client:
+            client.add_account(account)
+        else:
+            accounts.append(account)
+    return account
+
+
+def get_account(account_name):
+    return next((a for a in accounts if a.account_number == account_name),
+                   next((c.get_account(account_name) for c in (creditors + debtors) if
+                         c.has_account_number(account_name)), None)
+                   )
 
 
 def init_clients():
@@ -129,6 +139,13 @@ def print_result(context):
         for account in order_by_out(accounts)[:context['accounts_to_print']]:
             print("{:<60} € {:.2f}".format(account.account_number + " " + account.desc, account.total_out))
 
+
+    print('')
+    print('')
+    print('')
+    ba_account = get_account('BA')
+    if ba_account:
+        ba_account.write()
 
 def analyse(ing_csv_file, context):
     init_clients()
