@@ -1,0 +1,229 @@
+{
+  "nid": "14829",
+  "uuid": "09d252b1-487f-4bed-9a26-bdc2221f99a3",
+  "vid": "37797",
+  "langcode": "nl",
+  "category": "new_static_page",
+  "revision_timestamp": {
+    "value": "2023-04-11T13:24:18+00:00",
+    "format": "Y-m-d\\TH:i:sP"
+  },
+  "revision_uid": 1983,
+  "revision_log": null,
+  "status": "0",
+  "uid": 2005,
+  "title": "Programme fid\u00e9lit\u00e9",
+  "created": {
+    "value": "2023-07-23T20:51:50+00:00",
+    "format": "Y-m-d\\TH:i:sP"
+  },
+  "changed": {
+    "value": "2023-07-23T20:51:50+00:00",
+    "format": "Y-m-d\\TH:i:sP"
+  },
+  "promote": "0",
+  "sticky": "0",
+  "default_langcode": "0",
+  "revision_default": "1",
+  "revision_translation_affected": "1",
+  "content_translation_source": "fr",
+  "content_translation_outdated": "0",
+  "path": "https:\/\/www.marvilla-parks.com\/nl\/programme-fidelite",
+  "publish_on": null,
+  "unpublish_on": null,
+  "menu_link": null,
+  "field_brand": "MRV",
+  "field_header_media": {
+    "uri": "s3:\/\/mrv\/images\/2023-07\/Programme-de-fidelite.jpg",
+    "alt": "Enfant en bas \u00e2ge sur la plage",
+    "width": "1990",
+    "height": "800",
+    "is_cropped": false
+  },
+  "field_header_media_mobile": {
+    "uri": "s3:\/\/mrv\/images\/2023-04\/header-mobile-programme-de-fid\u00e9lit\u00e9.jpg",
+    "alt": "Homy entour\u00e9 d\u0027enfants au club enfants",
+    "width": "410",
+    "height": "600",
+    "is_cropped": false
+  },
+  "field_header_title": "Programme de fid\u00e9lit\u00e9",
+  "field_metatags": {
+    "description": "D\u00e8s votre premier s\u00e9jour, Marvilla Parks vous r\u00e9compense ! D\u00e9couvrez notre programme privil\u00e8ge : nos codes-cadeaux et avantages fid\u00e9lit\u00e9",
+    "title": "Notre programme de fid\u00e9lit\u00e9 | Marvilla Parks"
+  },
+  "field_subtitle": null,
+  "field_template_category": null,
+  "field_widgets": [
+    {
+      "category": "widget_w_intro",
+      "paragraph_item_id": "688269",
+      "behavior_settings": "a:0:{}",
+      "revision_default": "1",
+      "revision_translation_affected": "1",
+      "content_translation_source": "fr",
+      "content_translation_outdated": "0",
+      "content_translation_changed": {
+        "value": "2023-04-24T08:14:48+00:00",
+        "format": "Y-m-d\\TH:i:sP"
+      },
+      "field_alignment": null,
+      "field_block_style": null,
+      "field_image": null,
+      "field_text": "\u003Cp\u003EPour faire partie des privil\u00e9gi\u00e9s, c\u0027est tr\u00e8s simple :\u0026nbsp;\u003Ca class=\u0022lk-surcharge lk-deco lk-thirdary\u0022 href=\u0022https:\/\/booking.marvilla-parks.com\/rsl\/clickbooking?auth_sub_page=authentication\u0026amp;base_id=homair\u0026amp;display=edit_customer_info\u0026amp;url_mini_site=https%3A%2F%2Fwww.marvilla-parks.com\u0026amp;webuser=web_marvilla_fr\u0022\u003Eidentifiez-vous\u003C\/a\u003E\u0026nbsp;ou \u003Ca class=\u0022lk-surcharge lk-deco lk-thirdary\u0022 href=\u0022https:\/\/booking.marvilla-parks.com\/rsl\/clickbooking?auth_sub_page=authentication\u0026amp;base_id=homair\u0026amp;display=edit_customer_info\u0026amp;url_mini_site=https%3A%2F%2Fwww.marvilla-parks.com\u0026amp;webuser=web_marvilla_fr\u0022\u003Ecr\u00e9ez votre compte\u003C\/a\u003E et r\u00e9servez votre premier s\u00e9jour Marvilla Parks !\u003Cbr \/\u003E\nBonus : vous recevrez chaque ann\u00e9e un\u0026nbsp;\u003Cstrong\u003Ecode cadeau\u003C\/strong\u003E\u0026nbsp;d\u0027une valeur pouvant aller jusqu\u0027\u00e0\u0026nbsp;\u003Cstrong\u003E100\u20ac\u003C\/strong\u003E\u0026nbsp;! \ud83e\udd29 #Vous\u00catesG\u00e2t\u00e9s\u0026nbsp;\u003C\/p\u003E",
+      "field_title": null
+    },
+    {
+      "category": "widget_w_block_rich",
+      "paragraph_item_id": "688271",
+      "behavior_settings": "a:0:{}",
+      "revision_default": "1",
+      "revision_translation_affected": "1",
+      "content_translation_source": "fr",
+      "content_translation_outdated": "0",
+      "content_translation_changed": {
+        "value": "2023-04-25T15:56:23+00:00",
+        "format": "Y-m-d\\TH:i:sP"
+      },
+      "field_background_image": null,
+      "field_background_image_mobile": null,
+      "field_background_svg_url": null,
+      "field_blocks": [
+        {
+          "category": "sub_widget_w_block_rich_one_bloc",
+          "paragraph_item_id": "688270",
+          "behavior_settings": "a:0:{}",
+          "revision_default": "1",
+          "revision_translation_affected": "1",
+          "content_translation_source": "fr",
+          "content_translation_outdated": "0",
+          "content_translation_changed": {
+            "value": "2023-04-13T15:32:59+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+          },
+          "field_alignment": "left",
+          "field_asterisk": null,
+          "field_block_category": null,
+          "field_images": [
+            {
+              "uri": "s3:\/\/mrv\/images\/2023-04\/code-cadeau.jpg",
+              "alt": "deux parents deux enfants rigolant sur la plage du camping",
+              "width": "577",
+              "height": "400",
+              "is_cropped": false
+            }
+          ],
+          "field_links": [],
+          "field_text": "\u003Cp\u003ED\u00e8s votre premier s\u00e9jour, \u003Cstrong\u003EMarvilla Parks vous r\u00e9compense\u003C\/strong\u003E\u0026nbsp;en vous faisant gagner des codes cadeaux !\u0026nbsp;Plus vous s\u00e9journez chez nous, plus le montant de votre ch\u00e8que-cadeau sera \u00e9lev\u00e9.\u003C\/p\u003E\n\u003Cp\u003ED\u00e9couvrez le bar\u00e8me et faites-vous plaisir !\u0026nbsp;\ud83d\ude0d #BienvenueChezVousChezNous\u003C\/p\u003E\n\u003Cul\u003E\n\u003Cli\u003E\n\u003Cp\u003E\u003Cstrong\u003E30\u20ac \u003C\/strong\u003Epour les clients ayant effectu\u00e9 un s\u00e9jour\u003C\/p\u003E\n\u003C\/li\u003E\n\u003Cli\u003E\n\u003Cp\u003E\u003Cstrong\u003E50\u20ac\u003C\/strong\u003E\u0026nbsp;pour les clients ayant effectu\u00e9 deux s\u00e9jours\u003C\/p\u003E\n\u003C\/li\u003E\n\u003Cli\u003E\n\u003Cp\u003E\u003Cstrong\u003E70\u20ac\u003C\/strong\u003E\u0026nbsp;\u0026nbsp;pour les clients ayant effectu\u00e9 trois \u00e0 quatre s\u00e9jours\u003C\/p\u003E\n\u003C\/li\u003E\n\u003Cli\u003E\n\u003Cp\u003E\u003Cstrong\u003E100\u20ac\u003C\/strong\u003E\u0026nbsp;\u0026nbsp;pour les clients ayant effectu\u00e9 cinq s\u00e9jours ou plus\u0026nbsp;\u003C\/p\u003E\n\u003C\/li\u003E\n\u003C\/ul\u003E",
+          "field_title": "\u003Ch2\u003E\u00c0 gagner : un \u003Cstrong\u003Enouveau code cadeau\u003C\/strong\u003E chaque ann\u00e9e !\u003C\/h2\u003E",
+          "field_video": null
+        }
+      ],
+      "field_intro": null,
+      "field_invert_text_color": "0",
+      "link": {
+        "uri": "\/search",
+        "title": "R\u00e9servez votre s\u00e9jour ! ",
+        "options": {
+          "attributes": {
+            "class": "btn-cta btn-medium btn-primary btn-arrow-right",
+            "target": "",
+            "obfuscate": 1
+          }
+        }
+      },
+      "field_nb_columns": "3",
+      "field_orientation": "horizontal",
+      "field_title": null,
+      "field_use_a_slider_mobile": "0",
+      "field_use_slider": "0",
+      "field_widget_background_style": null
+    },
+    {
+      "category": "widget_w_icons_texts",
+      "paragraph_item_id": "688290",
+      "behavior_settings": "a:0:{}",
+      "revision_default": "1",
+      "revision_translation_affected": "1",
+      "content_translation_source": "fr",
+      "content_translation_outdated": "0",
+      "content_translation_changed": {
+        "value": "2023-05-19T15:03:34+00:00",
+        "format": "Y-m-d\\TH:i:sP"
+      },
+      "field_blocks": [
+        {
+          "category": "sub_widget_w_icons_texts_one_blo",
+          "paragraph_item_id": "688288",
+          "behavior_settings": "a:0:{}",
+          "revision_default": "1",
+          "revision_translation_affected": "1",
+          "content_translation_source": "fr",
+          "content_translation_outdated": "0",
+          "content_translation_changed": {
+            "value": "2023-05-19T15:03:34+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+          },
+          "field_image": {
+            "uri": "s3:\/\/mrv\/images\/2023-05\/Illustrations_validees_Plan de travail 1 copie 36.png",
+            "alt": "dessin de r\u00e9servation via ordinateur portable",
+            "width": "121",
+            "height": "121",
+            "is_cropped": false
+          },
+          "link": null,
+          "field_raw": "Si vous r\u00e9servez en ligne, saisissez votre code dans l\u0027encadr\u00e9 \u003Cstrong\u003E\u0022Code cadeau\u0022\u003C\/strong\u003E ! ",
+          "field_title": "Sur internet"
+        },
+        {
+          "category": "sub_widget_w_icons_texts_one_blo",
+          "paragraph_item_id": "688289",
+          "behavior_settings": "a:0:{}",
+          "revision_default": "1",
+          "revision_translation_affected": "1",
+          "content_translation_source": "fr",
+          "content_translation_outdated": "0",
+          "content_translation_changed": {
+            "value": "2023-05-19T15:03:34+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+          },
+          "field_image": {
+            "uri": "s3:\/\/mrv\/images\/2023-05\/Illustrations_validees_Plan de travail 1 copie 37.png",
+            "alt": "dessin de r\u00e9servation via mobile",
+            "width": "121",
+            "height": "121",
+            "is_cropped": false
+          },
+          "link": null,
+          "field_raw": "Si vous r\u00e9servez par t\u00e9l\u00e9phone, indiquez \u00e0 notre conseiller au \u003Cstrong\u003E\u003Ca href=\u0022tel:+33484390875\u0022 class=\u0022lk-surcharge lk-quartenary\u0022\u003E04.84.39.08.75\u003C\/a\u003E\u003C\/strong\u003E que vous souhaitez utiliser votre code ! ",
+          "field_title": "Par t\u00e9l\u00e9phone"
+        }
+      ],
+      "field_block_style": "primary",
+      "field_intro": null,
+      "link": null,
+      "field_title": "\u003Ch2\u003EComment utiliser votre \u003Cstrong\u003Ecode fid\u00e9lit\u00e9 ?\u003C\/strong\u003E\u003C\/h2\u003E",
+      "field_use_a_slider_mobile": "0",
+      "field_use_slider": "0"
+    }
+  ],
+  "siteTags": [],
+  "translations": {
+    "fr": {
+      "url": "\/programme-fidelite",
+      "status": 1
+    },
+    "en": {
+      "url": "\/en\/loyalty-programme",
+      "status": 0
+    },
+    "de": {
+      "url": "\/de\/treueprogramm",
+      "status": 0
+    },
+    "nl": {
+      "url": "\/nl\/programme-fidelite",
+      "status": 0
+    }
+  }
+}
